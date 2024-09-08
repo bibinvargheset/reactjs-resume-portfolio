@@ -1,7 +1,14 @@
 {
-  "name": "reactjs-portfolio",
-  "version": "0.1.0",
+  "name": "Bibin's-portfolio",
+  "description": "A personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects.",
+  "homepage": "https://bibinvargheset.github.io/resume-portfolio",
+  "version": "1.0.0",
   "private": true,
+  "author": {
+    "name": "Bibin Varghese",
+    "email": "bibinvargheset@gmail.com",
+    "url": "https://bibinvargheset.github.com/resume-portfolio"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
@@ -20,10 +27,13 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "custom-deploy": "node pages.js"
   },
   "eslintConfig": {
     "extends": [
@@ -42,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
