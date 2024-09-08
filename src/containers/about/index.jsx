@@ -4,36 +4,27 @@ import { DiAndroid, DiApple } from "react-icons/di";
 import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeaderContent from "../../components/PageHeaderContent";
 import { Animate } from "react-simple-animate";
+import config from "../../editable-stuff/config.js";  // Import configuration
 import "./styles.scss";
 
-const personalDetails = [
-  {
-    label: "Name",
-    value: "John Doe",
-  },
-  {
-    label: "Age",
-    value: "27",
-  },
-  {
-    label: "Address",
-    value: "India",
-  },
-  {
-    label: "Email",
-    value: "demo@example.com",
-  },
-  {
-    label: "Contact No",
-    value: "+11 3456789056",
-  },
-];
-
 function About() {
+  const {
+    FirstName,
+    LastName,
+    resume_header,
+    devDesc,
+    Age,
+    Address,
+    Email,
+    Contact_No,
+    profilePictureLink,
+    aboutDescription
+  } = config;
+
   return (
     <section className="about" id="about">
       <PageHeaderContent
-        headerText="About Me"
+        headerText={config.aboutHeading}
         icon={<BsInfoCircleFill size={40} />}
       />
       <div className="about__content">
@@ -47,20 +38,8 @@ function About() {
             }}
             end={{ transform: "translateX(0px)" }}
           >
-            <h3 className="developerContent">Front End Developer</h3>
-            <p>
-              Seasoned and independent Front End Developer with 5 years of
-              experience in blending the art of design with skill of programming
-              to deliver an immersive and engaging user experience through
-              efficient website development, proactive feature optimization, and
-              relentless debugging. Very passionate about aesthetics and UI
-              design. It is imperative that you provide a thorough and
-              professional approach to your resume. As a Front End Developer
-              you'll be judged by your ability to use UX and UI concepts and
-              follow design guidelines. It's about expressing your attention to
-              detail and how you can help implement design ideas for your future
-              employer.
-            </p>
+            <h3 className="developerContent">{resume_header}</h3>
+            <p>{aboutDescription}</p>
           </Animate>
           <Animate
             play
@@ -73,12 +52,26 @@ function About() {
           >
             <h3 className="personalContent">Personal Information</h3>
             <ul>
-              {personalDetails.map((item) => (
-                <li key={item.label}>
-                  <span className="title">{item.label}</span>
-                  <span className="value">{item.value}</span>
-                </li>
-              ))}
+              <li>
+                <span className="title">Name</span>
+                <span className="value">{`${FirstName} ${LastName}`}</span>
+              </li>
+              <li>
+                <span className="title">Age</span>
+                <span className="value">{Age}</span>
+              </li>
+              <li>
+                <span className="title">Address</span>
+                <span className="value">{Address}</span>
+              </li>
+              <li>
+                <span className="title">Email</span>
+                <span className="value">{Email}</span>
+              </li>
+              <li>
+                <span className="title">Contact No</span>
+                <span className="value">{Contact_No}</span>
+              </li>
             </ul>
           </Animate>
         </div>

@@ -1,6 +1,8 @@
-import PageHeaderContent from "../../components/PageHeaderContent";
+import React from 'react';
 import { RiContactsFill } from "react-icons/ri";
 import { Animate } from "react-simple-animate";
+import PageHeaderContent from "../../components/PageHeaderContent";
+import configuration from "../../editable-stuff/config"; // Import the configuration
 import "./styles.scss";
 
 function Contact() {
@@ -63,6 +65,11 @@ function Contact() {
           </div>
         </Animate>
       </div>
+      {configuration.showGetInTouch && (
+        <footer className="contact__footer">
+          <p>{configuration.footerMessage} <a href={`mailto:${configuration.Email}`}>{configuration.Email}</a></p>
+        </footer>
+      )}
     </section>
   );
 }

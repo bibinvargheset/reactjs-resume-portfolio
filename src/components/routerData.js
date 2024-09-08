@@ -6,7 +6,7 @@ const routerData = [
   { path: "/skills", pageName: <Skills /> },
   { path: "/resume", pageName: <Resume /> },
   { path: "/portfolio", pageName: <Portfolio /> },
-  { path: "/contact", pageName: <Contact /> },
+  // { path: "/contact", pageName: <Contact /> },
 ];
 const navLinks = [
   { to: "/", label: "Home" },
@@ -14,7 +14,7 @@ const navLinks = [
   { to: "/skills", label: "Skills" },
   { to: "/resume", label: "Resume" },
   { to: "/portfolio", label: "Portfolio" },
-  { to: "/contact", label: "Contact" },
+  // { to: "/contact", label: "Contact" },
 ];
 
 export { routerData, navLinks };

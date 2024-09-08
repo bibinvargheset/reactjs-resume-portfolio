@@ -5,10 +5,15 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
   &_text {
     display: flex;
     justify-content: center;
     align-items: center;
+
+
+
+
     h1 {
       color: var(--selected-theme-main-color);
       margin: 0;
@@ -108,5 +113,72 @@
   }
   to {
     width: 100%;
+  }
+}
+
+.developerContent {
+  color: var(--selected-theme-main-color);
+  margin: 0;
+  font-size: 8rem;
+  font-weight: 600;
+  line-height: 10rem;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typeEffect 0.5s steps(30, end);
+
+  @keyframes typeEffect {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+}
+
+
+.devDesc {
+  color: var(--selected-theme-main-color);
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typeEffect 0.5s steps(30, end);
+
+  @keyframes typeEffect {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+}
+
+.home_text_contact_social_wrapper {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+
+    a {
+      color: var(--selected-theme-main-color); // Set icon color
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #000; // Adjust the hover color if needed
+      }
+
+      .socialicons {
+        font-size: 3rem; // Adjust the icon size if needed
+      }
+    }
   }
 }
