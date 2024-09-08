@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/resume-portfolio/static/css/main.bbc513eb.css",
+    "main.js": "/resume-portfolio/static/js/main.28f3aa63.js",
+    "static/js/453.da02ddf7.chunk.js": "/resume-portfolio/static/js/453.da02ddf7.chunk.js",
+    "static/media/pexels-pixabay-276514.jpg": "/resume-portfolio/static/media/pexels-pixabay-276514.2b1bb634a97a85735415.jpg",
+    "static/media/pexels-cottonbro-5483077.jpg": "/resume-portfolio/static/media/pexels-cottonbro-5483077.8e4e65683dc0149fc984.jpg",
+    "static/media/pexels-pixabay-39284.jpg": "/resume-portfolio/static/media/pexels-pixabay-39284.3917bf8c30f22f7e74fc.jpg",
+    "static/media/pexels-karolina-grabowska-4195324.jpg": "/resume-portfolio/static/media/pexels-karolina-grabowska-4195324.9b66aa7c0651acf1cfb7.jpg",
+    "static/media/pexels-miguel-á-padriñán-68562.jpg": "/resume-portfolio/static/media/pexels-miguel-á-padriñán-68562.0efefb69f17d89ffb9cf.jpg",
+    "static/media/pexels-tirachard-kumtanom-733857.jpg": "/resume-portfolio/static/media/pexels-tirachard-kumtanom-733857.2e2ba76078ae2ce10a60.jpg",
+    "static/media/pexels-picjumbocom-196644.jpg": "/resume-portfolio/static/media/pexels-picjumbocom-196644.5e9fcb3c7875e1bc1e47.jpg",
+    "static/media/pexels-pixabay-261705.jpg": "/resume-portfolio/static/media/pexels-pixabay-261705.ddd61c4430fb00c8641b.jpg",
+    "static/media/pexels-kevin-ku-577585.jpg": "/resume-portfolio/static/media/pexels-kevin-ku-577585.1b336ad8668953c0a113.jpg",
+    "static/media/pexels-jorge-jesus-614117.jpg": "/resume-portfolio/static/media/pexels-jorge-jesus-614117.baf82bff0266b026ebca.jpg",
+    "index.html": "/resume-portfolio/index.html",
+    "main.bbc513eb.css.map": "/resume-portfolio/static/css/main.bbc513eb.css.map",
+    "main.28f3aa63.js.map": "/resume-portfolio/static/js/main.28f3aa63.js.map",
+    "453.da02ddf7.chunk.js.map": "/resume-portfolio/static/js/453.da02ddf7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbc513eb.css",
+    "static/js/main.28f3aa63.js"
+  ]
+}
